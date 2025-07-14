@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Processamento IA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Processamento de Ficheiros com IA</h1>
+
+  <form id="uploadForm">
+    <label>
+      <input type="radio" name="inputType" value="file" checked> Upload Ficheiro
+    </label>
+    <label>
+      <input type="radio" name="inputType" value="link"> Link Vídeo
+    </label>
+
+    <div id="fileInputContainer">
+      <input type="file" id="fileInput" />
+    </div>
+
+    <div id="linkInputContainer" style="display:none;">
+      <input type="text" id="linkInput" placeholder="https://exemplo.com/video.mp4" />
+    </div>
+
+    <select id="modelIA">
+      <option value="1">Melhorar Imagem</option>
+      <option value="2">Remover Fundo</option>
+      <option value="3">Cortar Vídeo</option>
+    </select>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
